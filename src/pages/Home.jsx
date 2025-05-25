@@ -7,7 +7,8 @@ const Home = () => {
       <section>
         <header className="w-screen mt-15 h-screen md:h-[700px] overflow-hidden relative flex items-center justify-center p-15">
           <video
-            src="/videos/bg-video.mp4"
+            src="/videos/bg-video.webm"
+            type="video/webm"
             autoPlay
             loop
             muted
@@ -73,15 +74,14 @@ const Home = () => {
       </section>
       {/* Marquee */}
       <section>
-        <marquee
-          loop
-          className="w-screen p-3 md:p-5 bg-[var(--green)] text-[var(--dark)] flex items-center text-xl md:text-2xl font-bold"
-        >
-          Empowering Dreams, One Story at a Time! | 20% OFF this week! | Over
-          500 success stories! | Join our free webinar on May 30th! | Empowering
-          Dreams, One Story at a Time! | 20% OFF this week! | Over 500 success
-          stories! | Join our free webinar on May 30th!
-        </marquee>
+        <div className="marquee-container overflow-hidden whitespace-nowrap bg-[var(--green)] text-[var(--dark)] flex items-center text-xl md:text-2xl font-bold p-3 md:p-5 w-screen">
+          <div className="marquee-content inline-block animate-marquee">
+            Empowering Dreams, One Story at a Time! | 20% OFF this week! | Over
+            500 success stories! | Join our free webinar on May 30th! |
+            Empowering Dreams, One Story at a Time! | 20% OFF this week! | Over
+            500 success stories! | Join our free webinar on May 30th!
+          </div>
+        </div>
       </section>
       {/* About */}
       <section>
