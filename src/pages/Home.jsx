@@ -5,18 +5,18 @@ const Home = () => {
     <div className="bg-[linear-gradient(to_top,var(--dark),var(--green-dark))] min-h-screen ">
       {/* Hero */}
       <section>
-        <header className="w-screen mt-15 h-1/2 md:h-[700px] relative overflow-hidden flex items-center justify-center p-15">
+        <header className="w-screen mt-15 h-screen md:h-[700px] overflow-hidden relative flex items-center justify-center p-15">
           <video
             src="/videos/bg-video.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover z-0"
+            className="absolute top-0 left-0 w-screen h-full object-cover z-0"
           ></video>
 
           <div className="container w-screen md:w-full relative md:bg-[var(--dark-50)] z-10 flex flex-col items-center justify-center gap-4 h-full md:border-5 rounded-2xl border-[var(--green)] p-5">
-            <h1 className="text-white font-bold text-2xl  md:text-4xl lg:text-6xl w-fit">
+            <h1 className="text-white text-center font-bold text-2xl sm:text-4xl lg:text-6xl w-fit">
               #UnlockYourBrand’s
               <span className="text-[var(--green)]">TrueStory.</span>
             </h1>
@@ -52,21 +52,21 @@ const Home = () => {
               src="/home/camera.png"
               alt="camera"
               srcset=""
-              className="absolute w-20 md:w-50 -bottom-10 md:bottom-10 -right-10 md:-right-20 z-10 random-animation"
+              className="absolute hidden md:block w-50  bottom-10 -right-20 z-10 random-animation"
             />
 
             <img
               src="/home/drone.png"
               alt="drone"
               srcset=""
-              className="absolute w-30 md:w-60  -top-10 md:top-10 -left-10 md:-left-20 z-10 random-animation"
+              className="absolute  hidden md:block w-60 top-10 -left-20 z-10 random-animation"
             />
-            <div class="w-20 hidden md:block h-20 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-10 -right-10 random-animation"></div>
-            <div class="w-10 hidden md:block h-10 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-30 -right-15 random-animation"></div>
-            <div class="w-14 hidden md:block h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-35 right-3 random-animation"></div>
-            <div class="w-7 hidden md:block h-7 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-23 left-0 random-animation"></div>
-            <div class="w-17 hidden md:block h-17 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-30 -left-18 random-animation"></div>
-            <div class="w-14 hidden md:block h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-35 left-3 random-animation"></div>
+            <div class="w-20  hidden md:block h-20 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-0 right-10 md:top-10  md:-right-10 random-animation"></div>
+            <div class="w-10  hidden md:block h-10 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-30 right-20 md:top-30  md:-right-15 random-animation"></div>
+            <div class="w-14  hidden md:block h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-20 right-0  md:top-35  md:right-3 random-animation"></div>
+            <div class="w-7  hidden md:block h-7 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-10 left-0  md:bottom-23  md:left-0 random-animation"></div>
+            <div class="w-17  hidden md:block h-17 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-20 left-20  md:bottom-30  md:-left-18 random-animation"></div>
+            <div class="w-14  hidden md:block h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-0 left-15  md:bottom-35  md:left-3 random-animation"></div>
           </div>
         </header>
       </section>
@@ -74,7 +74,7 @@ const Home = () => {
       <section>
         <marquee
           loop
-          className="w-screen p-5 bg-[var(--green)] text-[var(--dark)] flex items-center text-2xl font-bold"
+          className="w-screen p-3 md:p-5 bg-[var(--green)] text-[var(--dark)] flex items-center text-xl md:text-2xl font-bold"
         >
           Empowering Dreams, One Story at a Time! | 20% OFF this week! | Over
           500 success stories! | Join our free webinar on May 30th! | Empowering
@@ -84,18 +84,18 @@ const Home = () => {
       </section>
       {/* About */}
       <section>
-        <div className="container mx-auto flex flex-col items-center justify-center gap-4 p-5 mt-10 relative">
-          <div className="w-100  h-50 rounded-full border-5 border-[var(--green-50)] absolute -right-100 top-50 z-0"></div>
-          <div className="w-100  h-100 rounded-full border-5 border-[var(--green-50)] absolute -left-100 top-50 z-0"></div>
+        <div className="container mx-auto flex flex-col items-center justify-center gap-4 p-5 mt-10 relative overflow-hidden">
+          <div className="w-100  h-50 rounded-full border-5 border-[var(--green-50)] absolute md:-right-100 right-100 top-50 md:top-50 z-0"></div>
+          <div className="w-100  h-100 rounded-full border-5 border-[var(--green-50)] absolute md:-left-100 left-100 md:top-50 z-0"></div>
           <div className="w-full h-full flex flex-col md:flex-row gap-10 items-center justify-center">
             <img
               src="/logos/Unlock Story_White.png"
               alt="logo"
-              className="w-25 md:w-50 object-contain"
+              className="w-35 md:w-50 object-contain"
               srcset=""
             />
             <div className="hidden h-30  border-1 border-[var(--green)]"></div>
-            <p className="text-gray-200 text-xl ">
+            <p className="text-gray-200 text-xl text-center md:text-left">
               At Unlock Story, we transform your brand’s vision into compelling
               visual narratives through expert drone cinematography,
               professional video editing, and innovative creative design.{" "}
@@ -115,8 +115,8 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex  items-center justify-center gap-4 mt-10 z-10">
-            <div className="p-5 h-70 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 w-100 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 z-10">
+            <div className="p-5 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
               <img
                 src="/icons/drone.png"
                 alt=""
@@ -134,7 +134,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-5 h-70 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 w-100 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
+            <div className="p-5 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
               <img
                 src="/icons/editing.png"
                 alt=""
@@ -151,7 +151,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-5 h-70 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 w-100 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
+            <div className="p-5 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
               <img
                 src="/icons/design.png"
                 alt=""
@@ -168,7 +168,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="p-5 h-70 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 w-100 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
+            <div className="p-5 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
               <img
                 src="/icons/brand.png"
                 alt=""
