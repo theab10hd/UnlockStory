@@ -2,7 +2,7 @@ import PrimaryButton from "../components/Buttons/PrimaryButton";
 
 const Home = () => {
   return (
-    <div className="bg-[linear-gradient(to_top,var(--dark),var(--green-dark))] min-h-screen ">
+    <div className="bg-[linear-gradient(to_top,var(--dark),var(--green-dark))] min-h-screen w-screen overflow-hidden">
       {/* Hero */}
       <section>
         <header className="w-screen mt-15 h-screen md:h-[700px] overflow-hidden relative flex items-center justify-center p-15">
@@ -55,21 +55,21 @@ const Home = () => {
               src="/home/camera.png"
               alt="camera"
               srcset=""
-              className="absolute hidden md:block w-50  bottom-10 -right-20 z-10 random-animation"
+              className="absolute opacity-0 md:opacity-100 w-50  bottom-10 -right-20 z-10 random-animation"
             />
 
             <img
               src="/home/drone.png"
               alt="drone"
               srcset=""
-              className="absolute hidden md:block w-60 top-10 -left-20 z-10 random-animation"
+              className="absolute opacity-0 md:opacity-100 w-60 top-10 -left-20 z-10 random-animation"
             />
-            <div class="w-20  hidden md:block h-20 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-0 right-10 md:top-10  md:-right-10 random-animation"></div>
-            <div class="w-10  hidden md:block h-10 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-30 right-20 md:top-30  md:-right-15 random-animation"></div>
-            <div class="w-14  hidden md:block h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-20 right-0  md:top-35  md:right-3 random-animation"></div>
-            <div class="w-7  hidden md:block h-7 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-10 left-0  md:bottom-23  md:left-0 random-animation"></div>
-            <div class="w-17  hidden md:block h-17 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-20 left-20  md:bottom-30  md:-left-18 random-animation"></div>
-            <div class="w-14  hidden md:block h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-0 left-15  md:bottom-35  md:left-3 random-animation"></div>
+            <div class="w-20 opacity-0 md:opacity-100 h-20 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-0 right-10 md:top-10  md:-right-10 random-animation"></div>
+            <div class="w-10 opacity-0 md:opacity-100 h-10 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-30 right-20 md:top-30  md:-right-15 random-animation"></div>
+            <div class="w-14 opacity-0 md:opacity-100 h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-20 right-0  md:top-35  md:right-3 random-animation"></div>
+            <div class="w-7 opacity-0 md:opacity-100 h-7 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-10 left-0  md:bottom-23  md:left-0 random-animation"></div>
+            <div class="w-17 opacity-0 md:opacity-100 h-17 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-20 left-20  md:bottom-30  md:-left-18 random-animation"></div>
+            <div class="w-14 opacity-0 md:opacity-100 h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-0 left-15  md:bottom-35  md:left-3 random-animation"></div>
           </div>
         </header>
       </section>
@@ -86,9 +86,9 @@ const Home = () => {
       </section>
       {/* About */}
       <section>
-        <div className="container mx-auto flex flex-col items-center justify-center gap-4 p-5 mt-10 relative overflow-hidden">
-          <div className="w-100  h-50 rounded-full border-5 border-[var(--green-50)] absolute md:-right-100 right-100 top-50 md:top-50 z-0"></div>
-          <div className="w-100  h-100 rounded-full border-5 border-[var(--green-50)] absolute md:-left-100 left-100 md:top-50 z-0"></div>
+        <div className="container mx-auto flex flex-col items-center justify-center gap-4 p-5 mt-10 relative">
+          <div className="w-100 h-100 rounded-full border-5 border-[var(--green-50)] absolute md:-left-100 left-50 top-50 z-0"></div>
+          <div className="w-100 h-100 rounded-full border-5 border-[var(--green-50)] absolute  md:-right-100 right-50 bottom-0 z-0"></div>
           <div className="w-full h-full flex flex-col md:flex-row gap-10 items-center justify-center">
             <img
               src="/logos/Unlock Story_White.png"
@@ -126,10 +126,10 @@ const Home = () => {
                 srcset=""
               />
 
-              <h1 className="text-2xl font-bold text-[var(--dark)]">
+              <h1 className="text-xl font-bold text-[var(--dark)]">
                 Drone Cinematography
               </h1>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-md">
                 Capture breathtaking aerial perspectives that elevate your
                 brand. Ideal for real estate, events, tourism, and cinematic
                 promotions.
@@ -144,10 +144,10 @@ const Home = () => {
                 srcset=""
               />
 
-              <h1 className="text-2xl font-bold text-[var(--dark)]">
+              <h1 className="text-xl font-bold text-[var(--dark)]">
                 Professional Video Editing
               </h1>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-md">
                 From raw footage to refined stories—our editing team adds the
                 polish your content needs to engage and inspire.
               </p>
@@ -161,10 +161,10 @@ const Home = () => {
                 srcset=""
               />
 
-              <h1 className="text-2xl font-bold text-[var(--dark)]">
+              <h1 className="text-xl font-bold text-[var(--dark)]">
                 Creative Visual Design
               </h1>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-md">
                 We merge visuals with strategy to create content that’s not only
                 stunning but also aligned with your brand identity and goals.
               </p>
@@ -178,10 +178,10 @@ const Home = () => {
                 srcset=""
               />
 
-              <h1 className="text-2xl font-bold text-[var(--dark)]">
+              <h1 className="text-xl font-bold text-[var(--dark)]">
                 Tailored Brand Storytelling
               </h1>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-md">
                 Every brand has a story—we help you tell yours with authenticity
                 and impact, customized for your target audience and platform.
               </p>
