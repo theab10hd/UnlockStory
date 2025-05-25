@@ -5,7 +5,7 @@ const Home = () => {
     <div className="bg-[linear-gradient(to_top,var(--dark),var(--green-dark))] min-h-screen w-screen overflow-hidden">
       {/* Hero */}
       <section>
-        <header className="w-screen mt-15 h-screen md:h-[700px] overflow-hidden relative flex items-center justify-center p-15">
+        <header className="w-screen mt-15 h-[43rem] overflow-hidden relative flex items-center justify-center p-15">
           <video
             autoPlay
             loop
