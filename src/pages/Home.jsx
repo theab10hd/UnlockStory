@@ -49,7 +49,7 @@ const Home = () => {
 
             {/* Particles */}
             <img
-              src="/assets/home/camera.png"
+              src="../assets/home/camera.png"
               alt="camera"
               srcset=""
               className="absolute w-20 md:w-50 -bottom-10 md:bottom-10 -right-10 md:-right-20 z-10 random-animation"
