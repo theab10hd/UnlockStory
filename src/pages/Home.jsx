@@ -62,7 +62,7 @@ const Home = () => {
               src="/home/drone.png"
               alt="drone"
               srcset=""
-              className="absolute  hidden md:block w-60 top-10 -left-20 z-10 random-animation"
+              className="absolute hidden md:block w-60 top-10 -left-20 z-10 random-animation"
             />
             <div class="w-20  hidden md:block h-20 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-0 right-10 md:top-10  md:-right-10 random-animation"></div>
             <div class="w-10  hidden md:block h-10 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-30 right-20 md:top-30  md:-right-15 random-animation"></div>
@@ -97,7 +97,7 @@ const Home = () => {
               srcset=""
             />
             <div className="hidden h-30  border-1 border-[var(--green)]"></div>
-            <p className="text-gray-200 text-xl text-center md:text-left">
+            <p className="text-gray-200 text-md text-justify md:text-left">
               At Unlock Story, we transform your brand’s vision into compelling
               visual narratives through expert drone cinematography,
               professional video editing, and innovative creative design.{" "}
