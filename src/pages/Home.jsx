@@ -12,6 +12,7 @@ const Home = () => {
             loop
             muted
             playsInline
+            preload="auto"
             className="absolute top-0 left-0 w-screen h-full object-cover z-0"
           ></video>
 
