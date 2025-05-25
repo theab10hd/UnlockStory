@@ -7,15 +7,16 @@ const Home = () => {
       <section>
         <header className="w-screen mt-15 h-screen md:h-[700px] overflow-hidden relative flex items-center justify-center p-15">
           <video
-            src="/videos/bg-video.webm"
-            type="video/webm"
             autoPlay
             loop
-            muted
-            playsInline
+            muted={true}
+            playsInline={true}
             preload="auto"
             className="absolute top-0 left-0 w-screen h-full object-cover z-0"
-          ></video>
+          >
+            <source src="/videos/bg-video.mp4" type="video/mp4" />
+            <source src="/videos/bg-video.webm" type="video/webm" />
+          </video>
 
           <div className="container w-screen md:w-full relative md:bg-[var(--dark-50)] z-10 flex flex-col items-center justify-center gap-4 h-full md:border-5 rounded-2xl border-[var(--green)] p-5">
             <h1 className="text-white text-center font-bold text-2xl sm:text-4xl lg:text-6xl w-fit">
