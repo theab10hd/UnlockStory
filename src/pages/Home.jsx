@@ -7,7 +7,7 @@ const Home = () => {
       <section>
         <header className="w-screen mt-15 h-1/2 md:h-[700px] relative overflow-hidden flex items-center justify-center p-15">
           <video
-            src="/src/assets/videos/bg-video.mp4"
+            src="/videos/bg-video.mp4"
             autoPlay
             loop
             muted
@@ -49,14 +49,14 @@ const Home = () => {
 
             {/* Particles */}
             <img
-              src="../assets/home/camera.png"
+              src="/home/camera.png"
               alt="camera"
               srcset=""
               className="absolute w-20 md:w-50 -bottom-10 md:bottom-10 -right-10 md:-right-20 z-10 random-animation"
             />
 
             <img
-              src="/src/assets/home/drone.png"
+              src="/home/drone.png"
               alt="drone"
               srcset=""
               className="absolute w-30 md:w-60  -top-10 md:top-10 -left-10 md:-left-20 z-10 random-animation"
@@ -89,7 +89,7 @@ const Home = () => {
           <div className="w-100  h-100 rounded-full border-5 border-[var(--green-50)] absolute -left-100 top-50 z-0"></div>
           <div className="w-full h-full flex flex-col md:flex-row gap-10 items-center justify-center">
             <img
-              src="/src/assets/logos/Unlock Story_White.png"
+              src="/logos/Unlock Story_White.png"
               alt="logo"
               className="w-25 md:w-50 object-contain"
               srcset=""
@@ -118,7 +118,7 @@ const Home = () => {
           <div className="flex  items-center justify-center gap-4 mt-10 z-10">
             <div className="p-5 h-70 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 w-100 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
               <img
-                src="/src/assets/icons/drone.png"
+                src="/icons/drone.png"
                 alt=""
                 className="w-15 h-15 object-contain"
                 srcset=""
@@ -136,7 +136,7 @@ const Home = () => {
 
             <div className="p-5 h-70 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 w-100 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
               <img
-                src="/src/assets/icons/editing.png"
+                src="/icons/editing.png"
                 alt=""
                 className="w-15 h-15 object-contain"
                 srcset=""
@@ -153,7 +153,7 @@ const Home = () => {
 
             <div className="p-5 h-70 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 w-100 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
               <img
-                src="/src/assets/icons/design.png"
+                src="/icons/design.png"
                 alt=""
                 className="w-15 h-15 object-contain"
                 srcset=""
@@ -170,7 +170,7 @@ const Home = () => {
 
             <div className="p-5 h-70 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 w-100 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
               <img
-                src="/src/assets/icons/brand.png"
+                src="/icons/brand.png"
                 alt=""
                 className="w-15 h-15 object-contain"
                 srcset=""
