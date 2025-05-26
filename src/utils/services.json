@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Drone Cinematography",
+    "description": "Capture breathtaking aerial perspectives that elevate your brand. Ideal for real estate, events, tourism, and cinematic promotions.",
+    "image": "/icons/drone_white.png"
+  },
+  {
+    "title": "Professional Video Editing",
+    "description": "From raw footage to refined stories—our editing team adds the polish your content needs to engage and inspire.",
+    "image": "/icons/editing_white.png"
+  },
+  {
+    "title": "Creative Visual Design",
+    "description": "We merge visuals with strategy to create content that’s not only stunning but also aligned with your brand identity and goals.",
+    "image": "/icons/design_white.png"
+  },
+  {
+    "title": "Tailored Brand Storytelling",
+    "description": "Every brand has a story—we help you tell yours with authenticity and impact, customized for your target audience and platform.",
+    "image": "/icons/brand_white.png"
+  }
+]

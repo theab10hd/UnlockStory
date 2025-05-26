@@ -23,7 +23,7 @@ body {
 
 :root {
   --green: #0ada86;
-  --green-50: hsla(156, 91%, 45%, 0.5);
+  --green-50: hsla(156, 91%, 45%, 0.3);
   --green-light: #43ffb4;
   --green-dark: #00120b;
   --yellow: #f7b32b;
@@ -31,7 +31,7 @@ body {
   --dark: #0c1b22;
   --gray: #647278;
   --light: #e0e6e9;
-  --light-50: rgba(224, 230, 232, 0.5);
+  --light-50: rgba(224, 230, 232, 0.3);
 }
 
 .navbar {

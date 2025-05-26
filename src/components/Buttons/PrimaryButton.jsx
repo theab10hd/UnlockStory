@@ -1,4 +1,4 @@
-const PrimaryButton = ({ text, icon, className = "", ...props }) => {
+const PrimaryButton = ({ text, icon, className, ...props }) => {
   return (
     <button
       {...props}

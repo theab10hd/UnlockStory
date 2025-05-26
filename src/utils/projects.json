@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Smart Budget Tracker",
+    "description": "A web app that helps users manage their expenses and savings with real-time charts and budget recommendations.",
+    "link": "https://example.com/smart-budget-tracker",
+    "image": "https://placehold.co/400x300?text=Budget+Tracker"
+  },
+  {
+    "title": "Recipe Finder App",
+    "description": "A mobile-friendly application to discover new recipes based on ingredients you already have at home.",
+    "link": "https://example.com/recipe-finder",
+    "image": "https://placehold.co/400x300?text=Recipe+Finder"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "A sleek and responsive portfolio site showcasing creative and development projects with contact integration.",
+    "link": "https://example.com/portfolio",
+    "image": "https://placehold.co/400x300?text=Portfolio"
+  },
+  {
+    "title": "TaskMate - Productivity App",
+    "description": "A full-stack to-do list app with user authentication, reminders, and drag-and-drop task management.",
+    "link": "https://example.com/taskmate",
+    "image": "https://placehold.co/400x300?text=TaskMate"
+  },
+  {
+    "title": "Travel Blog CMS",
+    "description": "A custom content management system for travel bloggers with rich text editor and photo gallery support.",
+    "link": "https://example.com/travel-blog-cms",
+    "image": "https://placehold.co/400x300?text=Travel+Blog+CMS"
+  },
+  {
+    "title": "E-Commerce Storefront",
+    "description": "A modern e-commerce site built with MERN stack featuring product filtering, cart, and payment integration.",
+    "link": "https://example.com/ecommerce-store",
+    "image": "https://placehold.co/400x300?text=E-Commerce+Store"
+  }
+]

@@ -1,4 +1,8 @@
 import PrimaryButton from "../components/Buttons/PrimaryButton";
+import Project from "../components/Project";
+import ServiceBlock from "../components/ServiceBlock";
+import Projects from "../utils/projects.json";
+import Services from "../utils/services.json";
 
 const Home = () => {
   return (
@@ -76,7 +80,7 @@ const Home = () => {
       {/* Marquee */}
       <section>
         <div className="marquee-container overflow-hidden whitespace-nowrap bg-[var(--green)] text-[var(--dark)] flex items-center text-xl md:text-2xl font-bold p-3 md:p-5 w-screen">
-          <div className="marquee-content inline-block animate-marquee">
+          <div className="marquee-content inline-block animate-marquee ">
             Empowering Dreams, One Story at a Time! | 20% OFF this week! | Over
             500 success stories! | Join our free webinar on May 30th! |
             Empowering Dreams, One Story at a Time! | 20% OFF this week! | Over
@@ -87,7 +91,7 @@ const Home = () => {
       {/* About */}
       <section>
         <div className="container mx-auto flex flex-col items-center justify-center gap-4 p-5 mt-10 relative">
-          <div className="w-100 h-100 rounded-full border-5 border-[var(--green-50)] absolute md:-left-100 left-50 top-50 z-0"></div>
+          <div className="w-100 h-100  rounded-full border-10 border-[var(--green-50)] absolute md:-left-100 left-50 top-50 z-0"></div>
           <div className="w-100 h-100 rounded-full border-5 border-[var(--green-50)] absolute  md:-right-100 right-50 bottom-0 z-0"></div>
           <div className="w-full h-full flex flex-col md:flex-row gap-10 items-center justify-center">
             <img
@@ -118,83 +122,39 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 z-10">
-            <div className="p-5 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
-              <img
-                src="/icons/drone.png"
-                alt=""
-                className="w-15 h-15 object-contain"
-                srcset=""
+            {Services.slice(0, 4).map((service, index) => (
+              <ServiceBlock
+                key={index}
+                title={service.title}
+                description={service.description}
+                image={service.image}
               />
-
-              <h1 className="text-xl font-bold text-[var(--dark)]">
-                Drone Cinematography
-              </h1>
-              <p className="text-gray-700 text-md">
-                Capture breathtaking aerial perspectives that elevate your
-                brand. Ideal for real estate, events, tourism, and cinematic
-                promotions.
-              </p>
-            </div>
-
-            <div className="p-5 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
-              <img
-                src="/icons/editing.png"
-                alt=""
-                className="w-15 h-15 object-contain"
-                srcset=""
-              />
-
-              <h1 className="text-xl font-bold text-[var(--dark)]">
-                Professional Video Editing
-              </h1>
-              <p className="text-gray-700 text-md">
-                From raw footage to refined stories—our editing team adds the
-                polish your content needs to engage and inspire.
-              </p>
-            </div>
-
-            <div className="p-5 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
-              <img
-                src="/icons/design.png"
-                alt=""
-                className="w-15 h-15 object-contain"
-                srcset=""
-              />
-
-              <h1 className="text-xl font-bold text-[var(--dark)]">
-                Creative Visual Design
-              </h1>
-              <p className="text-gray-700 text-md">
-                We merge visuals with strategy to create content that’s not only
-                stunning but also aligned with your brand identity and goals.
-              </p>
-            </div>
-
-            <div className="p-5 flex flex-col justify-start gap-2 bg-gradient-to-t from-white to-gray-300 rounded-2xl hover:shadow-lg hover:scale-102 transition-all duration-300 ease-in-out">
-              <img
-                src="/icons/brand.png"
-                alt=""
-                className="w-15 h-15 object-contain"
-                srcset=""
-              />
-
-              <h1 className="text-xl font-bold text-[var(--dark)]">
-                Tailored Brand Storytelling
-              </h1>
-              <p className="text-gray-700 text-md">
-                Every brand has a story—we help you tell yours with authenticity
-                and impact, customized for your target audience and platform.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
       {/* Why Us */}
       <section>
         <div className="container mx-auto flex flex-col items-center justify-center gap-4 p-5 mt-10 relative">
-          <h1 className="text-[var(--green)] font-bold text-5xl w-fit">
+          <h1 className="text-[var(--green)] font-bold text-4xl w-fit mb-5">
             Our Latest Projects
           </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+            {Projects.slice(0, 4).map((project, index) => (
+              <Project
+                key={index}
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                link={project.link}
+              />
+            ))}
+          </div>
+          <PrimaryButton
+            text="View More"
+            className="px-4 py-2 md:px-10 hover:px-12"
+            icon={<i class="fa-solid fa-arrow-right"></i>}
+          />
         </div>
       </section>
     </div>
