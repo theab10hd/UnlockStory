@@ -136,10 +136,15 @@ const Home = () => {
       {/* Why Us */}
       <section>
         <div className="container mx-auto flex flex-col items-center justify-center gap-4 p-5 mt-10 relative">
-          <h1 className="text-[var(--green)] font-bold text-4xl w-fit mb-5">
-            Our Latest Projects
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+          <div className="w-100 h-100  rounded-full border-20 border-[var(--green-50)] absolute -right-30 bottom-50 z-0"></div>
+          <div className="w-full h-10 gap-4 flex items-center justify-start">
+            <div className="h-full w-[5rem] bg-[var(--green)]"></div>
+            <h1 className="text-[var(--green)] font-bold text-2xl md:text-4xl">
+              Our Latest Projects
+            </h1>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4 w-full z-10">
             {Projects.slice(0, 4).map((project, index) => (
               <Project
                 key={index}
@@ -147,6 +152,7 @@ const Home = () => {
                 description={project.description}
                 image={project.image}
                 link={project.link}
+                client={project.client}
               />
             ))}
           </div>

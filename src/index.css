@@ -29,8 +29,9 @@ body {
   --yellow: #f7b32b;
   --dark-50: rgba(12, 27, 34, 0.8);
   --dark: #0c1b22;
+  --dark-light: rgb(19, 36, 44);
   --gray: #647278;
-  --light: #e0e6e9;
+  --light: #bbbbbb;
   --light-50: rgba(224, 230, 232, 0.3);
 }
 
@@ -75,4 +76,11 @@ body {
 
 .random-animation {
   animation: random 10s ease-in-out infinite;
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom, white, var(--light));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

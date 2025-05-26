@@ -1,38 +1,44 @@
 [
   {
-    "title": "Smart Budget Tracker",
-    "description": "A web app that helps users manage their expenses and savings with real-time charts and budget recommendations.",
-    "link": "https://example.com/smart-budget-tracker",
-    "image": "https://placehold.co/400x300?text=Budget+Tracker"
+    "title": "City of Lights from Above ",
+    "description": "Kochi becomes even more captivating after dark. Captured the city’s charm from above with my drone — there's a quiet magic in the lights and the calmness seen from the sky.",
+    "link": "https://www.instagram.com/p/DBfWLbWqjAL/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Night_View_Of_Kochi.jpg",
+    "client": "Unlockstory.in"
   },
   {
-    "title": "Recipe Finder App",
-    "description": "A mobile-friendly application to discover new recipes based on ingredients you already have at home.",
-    "link": "https://example.com/recipe-finder",
-    "image": "https://placehold.co/400x300?text=Recipe+Finder"
+    "title": "Air Race Launch at Wonderla Kochi",
+    "description": "We had the privilege of capturing Wonderla Kochi’s latest attraction, Air Race, from a whole new perspective. From the grand ribbon-cutting to the adrenaline-filled first ride, our drone lenses were in the sky to document every thrilling moment.",
+    "link": "https://www.instagram.com/p/C41mWGyqlf6/",
+    "image": "https://content3.jdmagicbox.com/v2/comp/ernakulam/r5/0484px484.x484.240210025637.m6r5/catalogue/wonderla-air-race-pallikkara-ernakulam-amusement-parks-wk41b3f7eg.jpg",
+    "client": "Wonderla Kochi"
   },
   {
-    "title": "Portfolio Website",
-    "description": "A sleek and responsive portfolio site showcasing creative and development projects with contact integration.",
-    "link": "https://example.com/portfolio",
-    "image": "https://placehold.co/400x300?text=Portfolio"
+    "title": "Royal Drive Kochi from Above",
+    "description": "Captured the essence of luxury at Royal Drive SMART, Kochi — South India's premier destination for pre-owned exotic automobiles. From Porsche to BMW to Mercedes, the collection speaks for itself. Proud to present this exclusive space from an elevated perspective through our lens.",
+    "link": "https://www.instagram.com/p/DBY9ijmSkpd/",
+    "image": "https://cdn2.advanceinfotech.org/kozhikode.directory/800x450/business/433/4-1633952643-1636702401.webp",
+    "client": "Royal Drive Smart Kochi"
   },
   {
-    "title": "TaskMate - Productivity App",
-    "description": "A full-stack to-do list app with user authentication, reminders, and drag-and-drop task management.",
-    "link": "https://example.com/taskmate",
-    "image": "https://placehold.co/400x300?text=TaskMate"
+    "title": "Kochi Water Metro’s New Journey",
+    "description": "Charting new routes to the future as Kochi’s Water Metro sails ahead with the inauguration of the Eloor terminal. Capturing this milestone moment from the sky to showcase progress and connectivity.",
+    "link": "https://www.instagram.com/p/C4lAz7ThmyN/",
+    "image": "https://images.news18.com/webstories/2023/04/FuaiWi4aQAA0wrT.jpg",
+    "client": "Kochi Water Metro "
   },
   {
     "title": "Travel Blog CMS",
     "description": "A custom content management system for travel bloggers with rich text editor and photo gallery support.",
     "link": "https://example.com/travel-blog-cms",
-    "image": "https://placehold.co/400x300?text=Travel+Blog+CMS"
+    "image": "https://placehold.co/400x300?text=Travel+Blog+CMS",
+    "client": "Abhijith Gaganan"
   },
   {
     "title": "E-Commerce Storefront",
     "description": "A modern e-commerce site built with MERN stack featuring product filtering, cart, and payment integration.",
     "link": "https://example.com/ecommerce-store",
-    "image": "https://placehold.co/400x300?text=E-Commerce+Store"
+    "image": "https://placehold.co/400x300?text=E-Commerce+Store",
+    "client": "Abhijith Gaganan"
   }
 ]
