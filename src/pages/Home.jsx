@@ -1,11 +1,9 @@
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import Project from "../components/Project";
 import ServiceBlock from "../components/ServiceBlock";
-import ThoughtProcessBlock from "../components/ThoughtProcessBlock";
 
 import Projects from "../utils/projects.json";
 import Services from "../utils/services.json";
-import ThoughtProcess from "../utils/thoughtProcess.json";
 
 const Home = () => {
   const marginClasses = ["me-auto", "mx-auto", "ms-auto", "mx-auto", "me-auto"];
@@ -172,24 +170,32 @@ const Home = () => {
       <section>
         <div className="container mx-auto mt-5 opacity-30 grid grid-cols-3 md:grid-cols-6 gap-4 justify-items-center items-center p-5">
           <img
-            className="w-25 object-cover"
+            className="w-25 h-25 object-contain"
             src="/clients/!flame.png"
             alt="flame"
           />
-          <img className="w-25 object-cover" src="/clients/kfc.png" alt="kfc" />
           <img
-            className="w-25 object-cover"
+            className="w-25 h-25 object-contain"
+            src="/clients/kfc.png"
+            alt="kfc"
+          />
+          <img
+            className="w-25 h-25 object-contain"
             src="/clients/kochimetro.png"
             alt="kochimetro"
           />
           <img
-            className="w-25 object-cover"
+            className="w-25 h-25 object-contain"
             src="/clients/webxlr8.png"
             alt="webxlr8"
           />
-          <img className="w-25 object-cover" src="/clients/b&b.png" alt="b&b" />
           <img
-            className="w-25 object-cover"
+            className="w-25 h-25 object-contain"
+            src="/clients/b&b.png"
+            alt="b&b"
+          />
+          <img
+            className="w-25 h-25 object-contain"
             src="/clients/wonderla.png"
             alt="wonderla"
           />
@@ -197,17 +203,18 @@ const Home = () => {
       </section>
       {/* Thought Process */}
       <section>
-        <div className="container mx-auto mt-5">
-          <div className="grid grid-cols-1 w-full gap-4 p-5">
-            {ThoughtProcess.map((thought, index) => (
-              <ThoughtProcessBlock
-                key={index}
-                title={thought.title}
-                description={thought.description}
-                margin={marginClasses[index % marginClasses.length]}
-              />
-            ))}
-          </div>
+        <div className="container mx-auto mt-5 p-5">
+          <picture className="w-full h-full flex items-center justify-center">
+            <source
+              media="(min-width: 640px)"
+              srcSet="/thoughtprocess/us-web-steps.png"
+            />
+
+            <img
+              src="/thoughtprocess/us-web-steps-sm.png"
+              className="w-full h-full object-cover"
+            />
+          </picture>
         </div>
       </section>
     </div>
