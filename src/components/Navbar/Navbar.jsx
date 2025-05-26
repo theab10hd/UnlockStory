@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div className="w-screen relative">
-      <div className="fixed top-0 left-0 w-full h-16  flex items-center z-50 navbar">
+      <div className="fixed top-0 left-0 w-full h-16  flex items-center z-50 navbar border-b-1 border-white/30 ">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link to="/">
             <img
@@ -23,7 +23,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
           >
             <i
-              className={`fa-solid hover:text-[var(--light)] transition-all duration-300 ${
+              className={`fa-solid  text-white transition-all duration-300 ${
                 isOpen ? "fa-xmark text-[var(--light)]" : "fa-bars"
               }  fa-lg`}
             ></i>

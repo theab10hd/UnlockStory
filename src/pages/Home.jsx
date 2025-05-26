@@ -1,10 +1,15 @@
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import Project from "../components/Project";
 import ServiceBlock from "../components/ServiceBlock";
+import ThoughtProcessBlock from "../components/ThoughtProcessBlock";
+
 import Projects from "../utils/projects.json";
 import Services from "../utils/services.json";
+import ThoughtProcess from "../utils/thoughtProcess.json";
 
 const Home = () => {
+  const marginClasses = ["me-auto", "mx-auto", "ms-auto", "mx-auto", "me-auto"];
+
   return (
     <div className="bg-[linear-gradient(to_top,var(--dark),var(--green-dark))] min-h-screen w-screen overflow-hidden">
       {/* Hero */}
@@ -35,7 +40,7 @@ const Home = () => {
             <div className="w-full flex gap-2 mx-auto justify-center">
               <PrimaryButton
                 className="px-4 md:px-10 md:py-2 hover:md:px-12"
-                text="Get Started"
+                text="Portfolio"
               />
               <a
                 href="https://www.instagram.com/unlockstory.in/"
@@ -161,6 +166,48 @@ const Home = () => {
             className="px-4 py-2 md:px-10 hover:px-12"
             icon={<i class="fa-solid fa-arrow-right"></i>}
           />
+        </div>
+      </section>
+      {/* Clients */}
+      <section>
+        <div className="container mx-auto mt-5 opacity-30 grid grid-cols-3 md:grid-cols-6 gap-4 justify-items-center items-center p-5">
+          <img
+            className="w-25 object-cover"
+            src="/clients/!flame.png"
+            alt="flame"
+          />
+          <img className="w-25 object-cover" src="/clients/kfc.png" alt="kfc" />
+          <img
+            className="w-25 object-cover"
+            src="/clients/kochimetro.png"
+            alt="kochimetro"
+          />
+          <img
+            className="w-25 object-cover"
+            src="/clients/webxlr8.png"
+            alt="webxlr8"
+          />
+          <img className="w-25 object-cover" src="/clients/b&b.png" alt="b&b" />
+          <img
+            className="w-25 object-cover"
+            src="/clients/wonderla.png"
+            alt="wonderla"
+          />
+        </div>
+      </section>
+      {/* Thought Process */}
+      <section>
+        <div className="container mx-auto mt-5">
+          <div className="grid grid-cols-1 w-full gap-4 p-5">
+            {ThoughtProcess.map((thought, index) => (
+              <ThoughtProcessBlock
+                key={index}
+                title={thought.title}
+                description={thought.description}
+                margin={marginClasses[index % marginClasses.length]}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </div>
