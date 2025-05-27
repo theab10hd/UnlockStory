@@ -203,7 +203,11 @@ const Home = () => {
       </section>
       {/* Thought Process */}
       <section>
-        <div className="container mx-auto mt-5 p-5">
+        <div className="container mx-auto mt-5 p-5 relative">
+          <img
+            src="/thoughtprocess/back-drop.png"
+            className="absolute z-10 opacity-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          />
           <picture className="w-full h-full flex items-center justify-center">
             <source
               media="(min-width: 640px)"
@@ -212,9 +216,23 @@ const Home = () => {
 
             <img
               src="/thoughtprocess/us-web-steps-sm.png"
-              className="w-full h-full object-cover"
+              className="object-cover w-[20rem] sm:w-full"
             />
           </picture>
+          <p className="text-gradient text-justify md:text-center mt-10">
+            Our creative workflow is built around a streamlined five-step
+            process that ensures high-quality results across all services—drone
+            shoots, video production, graphic design, and social media
+            management. We start with Plan, where we define the client’s goals,
+            audience, and messaging to build a solid foundation. In the
+            Conceptualize phase, we generate tailored ideas that align with the
+            overall vision. Next, we Produce compelling content through
+            professional filming, designing, and asset creation. We then move to
+            Edit & Refine, where every detail is polished for consistency and
+            impact. Finally, in Deliver & Manage, we optimize and distribute the
+            content across platforms, while managing campaigns to maximize reach
+            and engagement—all under one roof.
+          </p>
         </div>
       </section>
     </div>
