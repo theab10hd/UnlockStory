@@ -161,43 +161,53 @@ const Home = () => {
           </div>
           <PrimaryButton
             text="View More"
-            className="px-4 py-2 md:px-10 hover:px-12"
+            className="px-4 py-2 md:px-10 hover:px-12 z-10"
             icon={<i class="fa-solid fa-arrow-right"></i>}
           />
         </div>
       </section>
       {/* Clients */}
       <section>
-        <div className="container mx-auto mt-5 opacity-30 grid grid-cols-3 md:grid-cols-6 gap-4 justify-items-center items-center p-5">
+        <div className="container mx-auto mt-5 opacity-30 grid grid-cols-4 md:grid-cols-8 gap-4  justify-items-center items-center p-5">
           <img
-            className="w-25 h-25 object-contain"
+            className="w-25 object-contain"
             src="/clients/!flame.png"
             alt="flame"
           />
           <img
-            className="w-25 h-25 object-contain"
+            className="w-25 object-contain"
             src="/clients/kfc.png"
             alt="kfc"
           />
           <img
-            className="w-25 h-25 object-contain"
+            className="w-25 object-contain"
             src="/clients/kochimetro.png"
             alt="kochimetro"
           />
           <img
-            className="w-25 h-25 object-contain"
+            className="w-25 object-contain"
             src="/clients/webxlr8.png"
             alt="webxlr8"
           />
           <img
-            className="w-25 h-25 object-contain"
-            src="/clients/b&b.png"
-            alt="b&b"
+            className="w-25 object-contain"
+            src="/clients/willmount.png"
+            alt="willmount"
           />
           <img
-            className="w-25 h-25 object-contain"
+            className="w-25 object-contain"
             src="/clients/wonderla.png"
             alt="wonderla"
+          />
+          <img
+            className="w-25 object-contain"
+            src="/clients/triumph.png"
+            alt="triumph"
+          />
+          <img
+            className="w-25 object-contain"
+            src="/clients/b&b.png"
+            alt="b&b"
           />
         </div>
       </section>
@@ -206,7 +216,7 @@ const Home = () => {
         <div className="container mx-auto mt-5 p-5 relative">
           <img
             src="/thoughtprocess/back-drop.png"
-            className="absolute z-10 opacity-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            className="absolute z-0 w-screen opacity-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
           />
           <picture className="w-full h-full flex items-center justify-center">
             <source
@@ -219,19 +229,11 @@ const Home = () => {
               className="object-cover w-[20rem] sm:w-full"
             />
           </picture>
-          <p className="text-gradient text-justify md:text-center mt-10">
-            Our creative workflow is built around a streamlined five-step
-            process that ensures high-quality results across all services—drone
-            shoots, video production, graphic design, and social media
-            management. We start with Plan, where we define the client’s goals,
-            audience, and messaging to build a solid foundation. In the
-            Conceptualize phase, we generate tailored ideas that align with the
-            overall vision. Next, we Produce compelling content through
-            professional filming, designing, and asset creation. We then move to
-            Edit & Refine, where every detail is polished for consistency and
-            impact. Finally, in Deliver & Manage, we optimize and distribute the
-            content across platforms, while managing campaigns to maximize reach
-            and engagement—all under one roof.
+          <p className="text-gradient text-justify md:text-center mt-10 mx-auto md:w-1/2 relative z-10">
+            We follow a simple five-step process Plan, Conceptualize, Produce,
+            Edit & Refine, and Deliver & Manage to create high-quality content.
+            From strategy to final delivery, we handle everything in-house for
+            smooth, effective results across all media services.
           </p>
         </div>
       </section>
