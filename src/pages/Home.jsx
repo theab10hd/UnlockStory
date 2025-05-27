@@ -1,9 +1,11 @@
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import Project from "../components/Project";
 import ServiceBlock from "../components/ServiceBlock";
+import ClientImage from "../components/ClientImage";
 
 import Projects from "../utils/projects.json";
 import Services from "../utils/services.json";
+import Clients from "../utils/clients.json";
 
 const Home = () => {
   const marginClasses = ["me-auto", "mx-auto", "ms-auto", "mx-auto", "me-auto"];
@@ -25,7 +27,7 @@ const Home = () => {
             <source src="/videos/bg-video.webm" type="video/webm" />
           </video>
 
-          <div className="container w-screen md:w-full relative md:bg-[var(--dark-50)] z-10 flex flex-col items-center justify-center gap-4 h-full md:border-5 rounded-2xl border-[var(--green)] p-5">
+          <div className="container w-screen md:w-full relative md:bg-gradient-to-b md:from-[var(--dark-light-50)] md:to-[var(--dark)] z-10 flex flex-col items-center justify-center gap-4 h-full md:border-1 rounded-2xl border-[var(--green)] p-5">
             <h1 className="text-white text-center font-bold text-2xl sm:text-4xl lg:text-6xl w-fit">
               #UnlockYourBrand’s
               <span className="text-[var(--green)]">TrueStory.</span>
@@ -168,47 +170,10 @@ const Home = () => {
       </section>
       {/* Clients */}
       <section>
-        <div className="container mx-auto mt-5 opacity-30 grid grid-cols-4 md:grid-cols-8 gap-4  justify-items-center items-center p-5">
-          <img
-            className="w-25 object-contain"
-            src="/clients/!flame.png"
-            alt="flame"
-          />
-          <img
-            className="w-25 object-contain"
-            src="/clients/kfc.png"
-            alt="kfc"
-          />
-          <img
-            className="w-25 object-contain"
-            src="/clients/kochimetro.png"
-            alt="kochimetro"
-          />
-          <img
-            className="w-25 object-contain"
-            src="/clients/webxlr8.png"
-            alt="webxlr8"
-          />
-          <img
-            className="w-25 object-contain"
-            src="/clients/willmount.png"
-            alt="willmount"
-          />
-          <img
-            className="w-25 object-contain"
-            src="/clients/wonderla.png"
-            alt="wonderla"
-          />
-          <img
-            className="w-25 object-contain"
-            src="/clients/triumph.png"
-            alt="triumph"
-          />
-          <img
-            className="w-25 object-contain"
-            src="/clients/b&b.png"
-            alt="b&b"
-          />
+        <div className="container mx-auto mt-5 opacity-50 grid grid-cols-4 md:grid-cols-8 gap-4  justify-items-center items-center p-5">
+          {Clients.map((client, index) => (
+            <ClientImage key={index} src={client.src} alt={client.alt} />
+          ))}
         </div>
       </section>
       {/* Thought Process */}
@@ -216,7 +181,7 @@ const Home = () => {
         <div className="container mx-auto mt-5 p-5 relative">
           <img
             src="/thoughtprocess/back-drop.png"
-            className="absolute z-0 w-screen opacity-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            className="absolute z-0 scale-200 md:scale-100 opacity-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
           />
           <picture className="w-full h-full flex items-center justify-center">
             <source
@@ -229,12 +194,50 @@ const Home = () => {
               className="object-cover w-[20rem] sm:w-full"
             />
           </picture>
-          <p className="text-gradient text-justify md:text-center mt-10 mx-auto md:w-1/2 relative z-10">
+          <p className="text-gradient text-justify md:text-center mt-10 mx-auto lg:w-1/2 relative z-10">
             We follow a simple five-step process Plan, Conceptualize, Produce,
             Edit & Refine, and Deliver & Manage to create high-quality content.
             From strategy to final delivery, we handle everything in-house for
             smooth, effective results across all media services.
           </p>
+        </div>
+      </section>
+      <section>
+        <div className="container mx-auto p-5 grid grid-cols-1 gap-4 md:grid-cols-3 items-center justify-center">
+          <div className=" flex-col col-span-2 gap-4 grid grid-cols-1 lg:grid-cols-3 items-start justify-center">
+            <div>
+              <h3 className="font-bold text-white text-8xl">40+</h3>
+              <p className="text-lg text-gray-400 ">
+                <span className="text-white">Projects Delivered,</span> From
+                startups to established brands, we’ve brought visions to life
+                with precision and passion.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-bold text-white text-8xl">50+</h3>
+              <p className="text-lg text-gray-400 ">
+                <span className="text-white">Creative Concepts Executed.</span>{" "}
+                Every idea is original, every design is strategic. We don’t
+                recycle — we reinvent.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-bold text-white text-8xl">4M+</h3>
+              <p className="text-lg text-gray-400 ">
+                <span className="text-white">Views Generated.</span> Our videos
+                and content have reached millions, creating real buzz and brand
+                awareness across platforms.
+              </p>
+            </div>
+          </div>
+          <div className="flex relative ">
+            <img
+              src="/images/drone.jpg"
+              alt="drone-image"
+              className="rounded-2xl z-10"
+            />
+            <div className="absolute z-0  h-full w-full top-5 left-5 bg-gradient-to-b from-[var(--dark-50)] to-[var(--dark-light-50)]  backdrop:blur-md border-1 rounded-2xl border-[var(--dark-light)]"></div>
+          </div>
         </div>
       </section>
     </div>

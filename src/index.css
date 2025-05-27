@@ -26,10 +26,10 @@ body {
   --green-50: hsla(156, 91%, 45%, 0.3);
   --green-light: #43ffb4;
   --green-dark: #00120b;
-  --yellow: #f7b32b;
   --dark-50: rgba(12, 27, 34, 0.8);
-  --dark: #0c1b22;
-  --dark-light: #13242c;
+  --dark: #0b1920;
+  --dark-light: #162831;
+  --dark-light-50: hsla(200, 38%, 14%, 0.5);
   --gray: #647278;
   --light: #bbbbbb;
   --light-50: rgba(224, 230, 232, 0.3);
