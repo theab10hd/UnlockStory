@@ -38,10 +38,12 @@ const Home = () => {
             </p>
 
             <div className="w-full flex gap-2 mx-auto justify-center">
-              <PrimaryButton
-                className="px-4 md:px-10 md:py-2 hover:md:px-12"
-                text="Portfolio"
-              />
+              <a href="#about">
+                <PrimaryButton
+                  className="px-4 md:px-10 md:py-2 hover:md:px-12"
+                  text="Let's Start"
+                />
+              </a>
               <a
                 href="https://www.instagram.com/unlockstory.in/"
                 target="_blank"
@@ -83,7 +85,7 @@ const Home = () => {
         </header>
       </section>
       {/* Marquee */}
-      <section>
+      <section id="about">
         <div className="marquee-container overflow-hidden whitespace-nowrap bg-[var(--green)] text-[var(--dark)] flex items-center text-xl md:text-2xl font-bold p-3 md:p-5 w-screen">
           <div className="marquee-content inline-block animate-marquee ">
             Empowering Dreams, One Story at a Time! | 20% OFF this week! | Over
@@ -168,14 +170,7 @@ const Home = () => {
           />
         </div>
       </section>
-      {/* Clients */}
-      <section>
-        <div className="container mx-auto mt-5 opacity-50 grid grid-cols-4 md:grid-cols-8 gap-4  justify-items-center items-center p-5">
-          {Clients.map((client, index) => (
-            <ClientImage key={index} src={client.src} alt={client.alt} />
-          ))}
-        </div>
-      </section>
+
       {/* Thought Process */}
       <section>
         <div className="container mx-auto mt-5 p-5 relative">
@@ -202,41 +197,79 @@ const Home = () => {
           </p>
         </div>
       </section>
+      {/* Clients */}
+      <section>
+        <div className="container mx-auto mt-5 opacity-50 grid grid-cols-4 md:grid-cols-8 gap-4  justify-items-center items-center p-5">
+          {Clients.map((client, index) => (
+            <ClientImage key={index} src={client.src} alt={client.alt} />
+          ))}
+        </div>
+      </section>
+      {/* Stats */}
       <section>
         <div className="container mx-auto p-5 grid grid-cols-1 gap-4 md:grid-cols-3 items-center justify-center">
           <div className=" flex-col col-span-2 gap-4 grid grid-cols-1 lg:grid-cols-3 items-start justify-center">
             <div>
               <h3 className="font-bold text-white text-8xl">40+</h3>
-              <p className="text-lg text-gray-400 ">
-                <span className="text-white">Projects Delivered,</span> From
-                startups to established brands, we’ve brought visions to life
-                with precision and passion.
+              <p className=" text-gray-400 ">
+                <span className="text-lg text-white">Projects Delivered,</span>{" "}
+                From startups to established brands, we’ve brought visions to
+                life with precision and passion.
               </p>
             </div>
             <div>
               <h3 className="font-bold text-white text-8xl">50+</h3>
-              <p className="text-lg text-gray-400 ">
-                <span className="text-white">Creative Concepts Executed.</span>{" "}
+              <p className=" text-gray-400 ">
+                <span className="text-lg text-white">
+                  Creative Concepts Executed.
+                </span>{" "}
                 Every idea is original, every design is strategic. We don’t
                 recycle — we reinvent.
               </p>
             </div>
             <div>
               <h3 className="font-bold text-white text-8xl">4M+</h3>
-              <p className="text-lg text-gray-400 ">
-                <span className="text-white">Views Generated.</span> Our videos
-                and content have reached millions, creating real buzz and brand
-                awareness across platforms.
+              <p className=" text-gray-400 ">
+                <span className="text-lg text-white">Views Generated.</span> Our
+                videos and content have reached millions, creating real buzz and
+                brand awareness across platforms.
               </p>
             </div>
           </div>
-          <div className="flex relative ">
+          <div className="flex relative">
             <img
               src="/images/drone.jpg"
               alt="drone-image"
-              className="rounded-2xl z-10"
+              className="rounded-2xl z-10 w-full"
             />
+            <div className="absolute z-20 bottom-10 left-1/2 -translate-x-1/2">
+              <PrimaryButton
+                className="px-4 md:px-10 py-2 hover:md:px-12 hover:shadow-lg shadow-green-700/50"
+                text="Portfolio"
+                icon={<i class="fa-solid fa-download"></i>}
+              />
+            </div>
             <div className="absolute z-0  h-full w-full top-5 left-5 bg-gradient-to-b from-[var(--dark-50)] to-[var(--dark-light-50)]  backdrop:blur-md border-1 rounded-2xl border-[var(--dark-light)]"></div>
+          </div>
+        </div>
+      </section>
+      <section className="relative w-screen">
+        <div className="absolute inset-0 bg-[url(/images/bg-pattern.png)] opacity-20 bg-cover mix-blend-screen"></div>
+        <div className="container mx-auto p-5 relative z-10">
+          <div className="text-center">
+            <p className="text-gray-300 text-lg">Talk is Over</p>
+            <h2 className="text-3xl md:text-7xl text-[var(--green)] font-bold text-center">
+              <span className="text-white">let's</span> Unlock Your Brand’s True
+              Story <span className="text-white">together.</span>
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 mt-10 gap-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.5021655092664!2d76.3277072758642!3d10.139774170612368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080f26a588ab6d%3A0xf6298ef6545a4c15!2sUnlock%20Story%20-%20Drone%20Videography%2C%20Photography%20%26%20Digital%20Marketing!5e0!3m2!1sen!2sin!4v1748359966172!5m2!1sen!2sin"
+              loading="lazy"
+              className="w-full h-40 lg:h-100 rounded-2xl "
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
