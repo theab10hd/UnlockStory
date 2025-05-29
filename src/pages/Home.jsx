@@ -8,13 +8,11 @@ import Services from "../utils/services.json";
 import Clients from "../utils/clients.json";
 
 const Home = () => {
-  const marginClasses = ["me-auto", "mx-auto", "ms-auto", "mx-auto", "me-auto"];
-
   return (
-    <div className="bg-[linear-gradient(to_top,var(--dark),var(--green-dark))] min-h-screen w-screen overflow-hidden">
+    <div className="bg-[linear-gradient(to_top,var(--dark),var(--green-dark))] min-h-screen w-screen overflow-hidden main-content">
       {/* Hero */}
       <section>
-        <header className="w-screen mt-15 h-[43rem] overflow-hidden relative flex items-center justify-center p-15">
+        <header className="w-screen mt-0 md:mt-15 h-[43rem] overflow-hidden relative flex items-center justify-center p-15">
           <video
             autoPlay
             loop
@@ -40,7 +38,7 @@ const Home = () => {
             <div className="w-full flex gap-2 mx-auto justify-center">
               <a href="#about">
                 <PrimaryButton
-                  className="px-4 md:px-10 md:py-2 hover:md:px-12"
+                  className="px-4 md:px-10 py-2 hover:md:px-12"
                   text="Let's Start"
                 />
               </a>
@@ -50,13 +48,13 @@ const Home = () => {
               >
                 <PrimaryButton
                   className="px-4 py-2 hover:md:px-12"
-                  icon={<i class="fa-brands fa-instagram"></i>}
+                  icon={<i className="fa-brands fa-instagram"></i>}
                 />
               </a>
               <a href="http://" target="_blank">
                 <PrimaryButton
                   className="px-4 py-2 hover:md:px-12"
-                  icon={<i class="fa-brands fa-facebook"></i>}
+                  icon={<i className="fa-brands fa-facebook"></i>}
                 />
               </a>
             </div>
@@ -65,22 +63,20 @@ const Home = () => {
             <img
               src="/home/camera.png"
               alt="camera"
-              srcset=""
-              className="absolute opacity-0 md:opacity-100 w-50  bottom-10 -right-20 z-10 random-animation"
+              className="absolute hidden md:!block w-50  bottom-10 -right-20 z-10 random-animation"
             />
 
             <img
               src="/home/drone.png"
               alt="drone"
-              srcset=""
-              className="absolute opacity-0 md:opacity-100 w-60 top-10 -left-20 z-10 random-animation"
+              className="absolute hidden md:!block w-60 top-10 -left-20 z-10 random-animation"
             />
-            <div class="w-20 opacity-0 md:opacity-100 h-20 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-0 right-10 md:top-10  md:-right-10 random-animation"></div>
-            <div class="w-10 opacity-0 md:opacity-100 h-10 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-30 right-20 md:top-30  md:-right-15 random-animation"></div>
-            <div class="w-14 opacity-0 md:opacity-100 h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-20 right-0  md:top-35  md:right-3 random-animation"></div>
-            <div class="w-7 opacity-0 md:opacity-100 h-7 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-10 left-0  md:bottom-23  md:left-0 random-animation"></div>
-            <div class="w-17 opacity-0 md:opacity-100 h-17 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-20 left-20  md:bottom-30  md:-left-18 random-animation"></div>
-            <div class="w-14 opacity-0 md:opacity-100 h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-0 left-15  md:bottom-35  md:left-3 random-animation"></div>
+            <div className="w-20 hidden md:!block h-20 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-0 right-10 md:top-10  md:-right-10 random-animation"></div>
+            <div className="w-10 hidden md:!block h-10 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-30 right-20 md:top-30  md:-right-15 random-animation"></div>
+            <div className="w-14 hidden md:!block h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute top-20 right-0  md:top-35  md:right-3 random-animation"></div>
+            <div className="w-7 hidden md:!block h-7 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-10 left-0  md:bottom-23  md:left-0 random-animation"></div>
+            <div className="w-17 hidden md:!block h-17 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-20 left-20  md:bottom-30  md:-left-18 random-animation"></div>
+            <div className="w-14 hidden md:!block h-14 bg-[linear-gradient(to_top,var(--green),var(--green-light))] rounded-full absolute bottom-0 left-15  md:bottom-35  md:left-3 random-animation"></div>
           </div>
         </header>
       </section>
@@ -105,7 +101,6 @@ const Home = () => {
               src="/logos/Unlock Story_White.png"
               alt="logo"
               className="w-35 md:w-50 object-contain"
-              srcset=""
             />
             <div className="hidden h-30  border-1 border-[var(--green)]"></div>
             <p className="text-gray-200 text-md text-justify md:text-left">
@@ -166,7 +161,7 @@ const Home = () => {
           <PrimaryButton
             text="View More"
             className="px-4 py-2 md:px-10 hover:px-12 z-10"
-            icon={<i class="fa-solid fa-arrow-right"></i>}
+            icon={<i className="fa-solid fa-arrow-right"></i>}
           />
         </div>
       </section>
@@ -217,7 +212,7 @@ const Home = () => {
                 life with precision and passion.
               </p>
             </div>
-            <div>
+            <div className="text-end md:text-start">
               <h3 className="font-bold text-white text-8xl">50+</h3>
               <p className=" text-gray-400 ">
                 <span className="text-lg text-white">
@@ -246,13 +241,14 @@ const Home = () => {
               <PrimaryButton
                 className="px-4 md:px-10 py-2 hover:md:px-12 hover:shadow-lg shadow-green-700/50"
                 text="Portfolio"
-                icon={<i class="fa-solid fa-download"></i>}
+                icon={<i className="fa-solid fa-download"></i>}
               />
             </div>
             <div className="absolute z-0  h-full w-full top-5 left-5 bg-gradient-to-b from-[var(--dark-50)] to-[var(--dark-light-50)]  backdrop:blur-md border-1 rounded-2xl border-[var(--dark-light)]"></div>
           </div>
         </div>
       </section>
+      <hr className="container mx-auto my-5  border-0" />
       <section className="relative w-screen">
         <div className="absolute inset-0 bg-[url(/images/bg-pattern.png)] opacity-20 bg-cover mix-blend-screen"></div>
         <div className="container mx-auto p-5 relative z-10">
@@ -263,13 +259,57 @@ const Home = () => {
               Story <span className="text-white">together.</span>
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 mt-10 gap-4">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.5021655092664!2d76.3277072758642!3d10.139774170612368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080f26a588ab6d%3A0xf6298ef6545a4c15!2sUnlock%20Story%20-%20Drone%20Videography%2C%20Photography%20%26%20Digital%20Marketing!5e0!3m2!1sen!2sin!4v1748359966172!5m2!1sen!2sin"
-              loading="lazy"
-              className="w-full h-40 lg:h-100 rounded-2xl "
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div className="grid grid-cols-1 md:grid-cols-11 mt-10 gap-4">
+            {/* First iframe */}
+            <div className="md:col-span-5 row-span-1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.5021655092664!2d76.3277072758642!3d10.139774170612368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080f26a588ab6d%3A0xf6298ef6545a4c15!2sUnlock%20Story%20-%20Drone%20Videography%2C%20Photography%20%26%20Digital%20Marketing!5e0!3m2!1sen!2sin!4v1748359966172!5m2!1sen!2sin"
+                loading="lazy"
+                className="w-full h-full rounded-2xl"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <hr className="md:hidden" />
+
+            <div className="mx-auto hidden md:!flex md:items-center md:justify-center p-5">
+              <div className="h-full w-1 bg-[var(--green)] rounded-full"></div>
+            </div>
+
+            {/* Second iframe */}
+            <div className="md:col-span-5 row-span-1 w-full h-full flex flex-col justify-center items-center md:items-start">
+              <img
+                src="/logos/Unlock Story_White.png"
+                alt="brand-logo"
+                className="w-[10rem] object-contain mb-4"
+              />
+              <div className="text-white text-center md:text-left">
+                <h2 className="text-2xl font-bold">Unlock Story</h2>
+                <p className="text-gray-300 text-md md:text-lg ">
+                  YIB GLOBAL TECHNOLOGY SERVICES LLP
+                  <br /> East Veliyathunad, UCC P.O, Aluva-2, <br /> Kerala
+                  683102 India
+                  <br />
+                  <div className="flex  gap-2 justify-center md:justify-start py-2 items-center">
+                    <a target="_blank" href="">
+                      <i className="fa-solid fa-square-phone fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    </a>
+                    <a target="_blank" href="">
+                      <i className="fa-solid fa-square-envelope fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    </a>
+                    <a target="_blank" href="">
+                      <i className="fa-brands fa-square-instagram fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    </a>
+                    <a target="_blank" href="">
+                      <i className="fa-brands fa-square-facebook fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    </a>
+                    <a target="_blank" href="">
+                      <i className="fa-brands fa-linkedin fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    </a>
+                  </div>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

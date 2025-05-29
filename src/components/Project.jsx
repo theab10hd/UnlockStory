@@ -23,7 +23,7 @@ const Project = ({ title, description, image, link, client }) => {
             target="_blank"
             className="text-gray-400 hover:text-white transition-all duration-300"
           >
-            View <i class="fa-solid fa-arrow-up-right-from-square "></i>
+            View <i className="fa-solid fa-arrow-up-right-from-square "></i>
           </a>
         </div>
       </div>

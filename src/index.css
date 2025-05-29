@@ -88,3 +88,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+hr {
+  border: none;
+  height: 3px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--green),
+    transparent
+  );
+}
