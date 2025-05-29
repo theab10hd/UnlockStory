@@ -173,7 +173,7 @@ const Home = () => {
             src="/thoughtprocess/back-drop.png"
             className="absolute z-0 scale-200 md:scale-100 opacity-50 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
           />
-          <picture className="w-full h-full flex items-center justify-center">
+          <picture className="w-full h-full flex items-center justify-center relative z-10">
             <source
               media="(min-width: 640px)"
               srcSet="/thoughtprocess/us-web-steps.png"
