@@ -6,6 +6,7 @@ import ClientImage from "../components/ClientImage";
 import Projects from "../utils/projects.json";
 import Services from "../utils/services.json";
 import Clients from "../utils/clients.json";
+import React, { Fragment } from "react";
 
 const Home = () => {
   return (
@@ -256,10 +257,33 @@ const Home = () => {
             <p className="text-gray-300 text-lg">Talk is Over</p>
             <h2 className="text-3xl md:text-7xl text-[var(--green)] font-bold text-center">
               <span className="text-white">let's</span> Unlock Your Brand’s True
-              Story <span className="text-white">together.</span>
+              Story <span className="text-white">together.</span> <br />
+              <div className="marquee-container overflow-hidden w-full whitespace-nowrap relative mt-5">
+                <div className="marquee-content inline-block animate-marquee will-change-transform">
+                  {[...Array(2)].map((_, i) => (
+                    <React.Fragment key={i}>
+                      <a
+                        href="tel:+"
+                        target="_blank"
+                        style={{ WebkitTextStroke: "1px var(--green)" }}
+                        className="text-7xl md:text-9xl mx-5 text-transparent hover:tracking-widest transition-all duration-300 ease-in-out"
+                      >
+                        CONTACT NOW
+                      </a>
+                      <a
+                        href="tel:+"
+                        style={{ WebkitTextStroke: "1px white" }}
+                        className="text-7xl md:text-9xl mx-5 text-transparent hover:tracking-widest transition-all duration-300 ease-in-out"
+                      >
+                        CONTACT NOW
+                      </a>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-11 mt-10 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-11 mt-15 gap-4">
             {/* First iframe */}
             <div className="md:col-span-5 row-span-1">
               <iframe
@@ -287,27 +311,28 @@ const Home = () => {
                 <h2 className="text-2xl font-bold">Unlock Story</h2>
                 <p className="text-gray-300 text-md md:text-lg ">
                   YIB GLOBAL TECHNOLOGY SERVICES LLP
-                  <br /> East Veliyathunad, UCC P.O, Aluva-2, <br /> Kerala
-                  683102 India
-                  <br />
-                  <div className="flex  gap-2 justify-center md:justify-start py-2 items-center">
-                    <a target="_blank" href="">
-                      <i className="fa-solid fa-square-phone fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
-                    </a>
-                    <a target="_blank" href="">
-                      <i className="fa-solid fa-square-envelope fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
-                    </a>
-                    <a target="_blank" href="">
-                      <i className="fa-brands fa-square-instagram fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
-                    </a>
-                    <a target="_blank" href="">
-                      <i className="fa-brands fa-square-facebook fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
-                    </a>
-                    <a target="_blank" href="">
-                      <i className="fa-brands fa-linkedin fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
-                    </a>
-                  </div>
+                  <br /> East Veliyathunad, UCC P.O, Aluva-2, <br /> Kerala,
+                  India. <br />
+                  PIN - 683102
                 </p>
+                <br />
+                <div className="flex  gap-2 justify-center md:justify-start py-2 items-center">
+                  <a target="_blank" href="">
+                    <i className="fa-solid fa-square-phone fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                  </a>
+                  <a target="_blank" href="">
+                    <i className="fa-solid fa-square-envelope fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                  </a>
+                  <a target="_blank" href="">
+                    <i className="fa-brands fa-square-instagram fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                  </a>
+                  <a target="_blank" href="">
+                    <i className="fa-brands fa-square-facebook fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                  </a>
+                  <a target="_blank" href="">
+                    <i className="fa-brands fa-linkedin fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
