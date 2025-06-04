@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="border-t bg-[var(--green-dark)] border-white/10 mt-6 py-4 text-center text-sm text-white/50 relative z-10">
+      <div className="border-t bg-gray-950 border-white/10 mt-6 py-4 text-center text-sm text-white/50 relative z-10">
         © {new Date().getFullYear()} Unlock Story. All rights reserved |
         Designed and Developed by{" "}
         <a

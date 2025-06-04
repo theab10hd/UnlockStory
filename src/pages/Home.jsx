@@ -285,7 +285,7 @@ const Home = () => {
               </div>
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-11 mt-15 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-11 mt-5 gap-4">
             {/* First iframe */}
             <div className="sm:col-span-5 row-span-1">
               <iframe
@@ -296,14 +296,12 @@ const Home = () => {
               ></iframe>
             </div>
 
-            <hr className="sm:hidden" />
-
             <div className="mx-auto hidden sm:!flex sm:items-center sm:justify-center p-5">
               <div className="h-full w-1 bg-[var(--green)] rounded-full"></div>
             </div>
 
             {/* Second iframe */}
-            <div className="sm:col-span-5 row-span-1 w-full h-full flex flex-col justify-center items-center sm:items-start">
+            <div className="py-5 sm:mt-0 sm:col-span-5 row-span-1 w-full h-full flex flex-col justify-center items-center sm:items-start">
               <img
                 src="/logos/Unlock Story_White.png"
                 alt="brand-logo"
@@ -318,21 +316,21 @@ const Home = () => {
                   PIN - 683102
                 </p>
                 <br />
-                <div className="flex  gap-2 justify-center sm:justify-start py-2 items-center">
+                <div className="flex  gap-2 justify-center sm:justify-start items-center">
                   <a target="_blank" href="">
-                    <i className="fa-solid fa-square-phone fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    <i className="fa-solid fa-square-phone text-4xl hover:text-white transition-all duration-300 ease-in-out"></i>
                   </a>
                   <a target="_blank" href="">
-                    <i className="fa-solid fa-square-envelope fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    <i className="fa-solid fa-square-envelope text-4xl hover:text-white transition-all duration-300 ease-in-out"></i>
                   </a>
                   <a target="_blank" href="">
-                    <i className="fa-brands fa-square-instagram fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    <i className="fa-brands fa-square-instagram text-4xl hover:text-white transition-all duration-300 ease-in-out"></i>
                   </a>
                   <a target="_blank" href="">
-                    <i className="fa-brands fa-square-facebook fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    <i className="fa-brands fa-square-facebook text-4xl hover:text-white transition-all duration-300 ease-in-out"></i>
                   </a>
                   <a target="_blank" href="">
-                    <i className="fa-brands fa-linkedin fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
+                    <i className="fa-brands fa-linkedin text-4xl hover:text-white transition-all duration-300 ease-in-out"></i>
                   </a>
                 </div>
               </div>
