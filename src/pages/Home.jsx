@@ -1,12 +1,14 @@
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import Project from "../components/Project";
 import ServiceBlock from "../components/ServiceBlock";
+
 import ClientImage from "../components/ClientImage";
 
 import Projects from "../utils/projects.json";
 import Services from "../utils/services.json";
 import Clients from "../utils/clients.json";
 import React, { Fragment } from "react";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -283,9 +285,9 @@ const Home = () => {
               </div>
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-11 mt-15 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-11 mt-15 gap-4">
             {/* First iframe */}
-            <div className="md:col-span-5 row-span-1">
+            <div className="sm:col-span-5 row-span-1">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.5021655092664!2d76.3277072758642!3d10.139774170612368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080f26a588ab6d%3A0xf6298ef6545a4c15!2sUnlock%20Story%20-%20Drone%20Videography%2C%20Photography%20%26%20Digital%20Marketing!5e0!3m2!1sen!2sin!4v1748359966172!5m2!1sen!2sin"
                 loading="lazy"
@@ -294,14 +296,14 @@ const Home = () => {
               ></iframe>
             </div>
 
-            <hr className="md:hidden" />
+            <hr className="sm:hidden" />
 
-            <div className="mx-auto hidden md:!flex md:items-center md:justify-center p-5">
+            <div className="mx-auto hidden sm:!flex sm:items-center sm:justify-center p-5">
               <div className="h-full w-1 bg-[var(--green)] rounded-full"></div>
             </div>
 
             {/* Second iframe */}
-            <div className="md:col-span-5 row-span-1 w-full h-full flex flex-col justify-center items-center md:items-start">
+            <div className="sm:col-span-5 row-span-1 w-full h-full flex flex-col justify-center items-center sm:items-start">
               <img
                 src="/logos/Unlock Story_White.png"
                 alt="brand-logo"
@@ -316,7 +318,7 @@ const Home = () => {
                   PIN - 683102
                 </p>
                 <br />
-                <div className="flex  gap-2 justify-center md:justify-start py-2 items-center">
+                <div className="flex  gap-2 justify-center sm:justify-start py-2 items-center">
                   <a target="_blank" href="">
                     <i className="fa-solid fa-square-phone fa-2xl hover:text-white transition-all duration-300 ease-in-out"></i>
                   </a>
@@ -338,6 +340,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
